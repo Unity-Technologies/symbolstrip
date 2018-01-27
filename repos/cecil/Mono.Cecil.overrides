@@ -1,0 +1,10 @@
+<!-- This is an override file to rename Mono.Cecil to Unity.Cecil -->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<AssemblyName>$(AssemblyName.Replace('Mono', 'Unity'))</AssemblyName>
+	<AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Unity.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+	<ItemGroup>
+		<Compile Include="$(MSBuildThisFileDirectory)Unity.AssemblyInfo.cs" />
+	</ItemGroup>
+</Project>
